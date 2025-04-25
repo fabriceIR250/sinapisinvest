@@ -1,0 +1,31 @@
+.dropdown-menu .dropdown-item {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item i {
+  transition: color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+.dropdown-menu .dropdown-item:hover i {
+  color: black !important;
+}
+
+@keyframes slideDownFadeIn {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navbar-animated {
+  animation: slideDownFadeIn 0.8s ease-out forwards;
+}
